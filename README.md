@@ -19,39 +19,39 @@
 
 ### My Technical Contribution
 [Back-End]<br>
-OAuth 2.0 <br>
+1.OAuth 2.0 <br>
 -Path : web_project/src/server/server.js <br>
--Method <br>
-1) Authorization Code Callback Listener <br>
+-Method
+1)Authorization Code Callback Listener <br>
   app.get('/AuthCallback', function(req,res){});  <br>
-2) Get Access Token  <br>
+2)Get Access Token  <br>
   app.get('/authResult', function (req, res){}); <br>
-3) Get Account Balance (Using KOSCOM API)  <br>
+3)Get Account Balance (Using KOSCOM API)  <br>
   app.post('/balance', function(req, res){});  <br>
   app.post('/realBalance', function(req, res){});  <br>
  <br>
-2. User/Fund Info Registration <br>  <br>
+2.User/Fund Info Registration <br>  <br>
 -Path : web_project/src/server/server.js  <br>
 -Method  <br>
- 1) Fund Info Registration/Deletion  <br>
+ 1)Fund Info Registration/Deletion  <br>
   app.post('/fundInsert', function(req, res){  <br>
   app.post('/fundDelete', function(req, res){  <br>
  <br>
- 2) User Info Registration <br>
+ 2)User Info Registration <br>
   app.post('/userInsert', function(req, res){}; <br>
   app.post('/userCheck', function(req, res){}; <br>
  <br>
 [Front-End] <br>
-1. User Registartion Page <br>
+1.User Registartion Page <br>
 - Path : web_project/src/pages/SignUp/index.js <br>
 - Method <br>
-1) Get Access Token <br>
+1)Get Access Token <br>
   function handleGetToken() <br>
-2) Save Access Token <br>
+2)Save Access Token <br>
   function handleSaveToken() <br>
-3) Check Valid Account <br>
+3)Check Valid Account <br>
   function handleSubmitBalance(){ <br>
-4) Component <br>
+4)Component <br>
   <button className="btn btn-primary btn-block" type="button" style={{backgroundColor: "darkorange", borderColor : "darkorange"}} onClick={handleGetToken}>Token 인증</button> <br>
   <button className="btn btn-primary btn-block" type="button" style={{backgroundColor: "darkorange", borderColor : "darkorange"}} onClick={handleSaveToken}>Token 저장</button> <br>
   <button className="btn btn-primary btn-block" type="button" style={{backgroundColor: "green", borderColor : "green"}} onClick={handleSubmitBalance}>계좌 확인</button> <br>
