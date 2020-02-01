@@ -51,6 +51,7 @@
 3)Check Valid Account <br>
   function handleSubmitBalance(){ <br>
 4)Component <br>
+`
 <button className="btn btn-primary btn-block" type="button" style={{backgroundColor: "darkorange", borderColor : "darkorange"}} onClick={handleGetToken}>Token 인증</button>
 <br>
 <button className="btn btn-primary btn-block" type="button" style={{backgroundColor: "darkorange", borderColor : "darkorange"}} onClick={handleSaveToken}>Token 저장</button>
@@ -76,4 +77,4 @@
 <div className="form-group"> <br>
 <label>Access Token</label> <br>
 <input id = "inputToken" className="form-control" placeholder="아래 'Token 얻기' 버튼을 눌러 얻으십시오." readOnly="readOnly" onChange={''} /> <br>
-</div> <br>
+</div> <br>`
