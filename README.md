@@ -9,18 +9,19 @@
 6. 사업의 지속가능성 측면에서, 플랫폼 비즈니스의 세 주체가 모두 win-win할 수 있는 결과를 도출할 수 있으므로, 안정적인 플랫폼 운영이 기대
 
 
+<br><br>
 ### Tech
 -Front-End : React, jQuery <br>
 -Back-End :Node.js, Express.js <br>
 -DataBase : MariaDB <br>
 -Server : AWS <br>
 
-
+<br><br>
 ### My Technical Contribution (Hong)
 <b>[Back-End]</b><br>
-1.OAuth 2.0 <br>
+<b>1.OAuth 2.0 <br>
 -Path : web_project/src/server/server.js <br>
--Method <br>
+-Method</b><br>
 1)Authorization Code Callback Listener <br>
   app.get('/AuthCallback', function(req,res){});  <br>
 2)Get Access Token  <br>
@@ -29,9 +30,9 @@
   app.post('/balance', function(req, res){});  <br>
   app.post('/realBalance', function(req, res){});  <br>
  <br>
-2.User/Fund Info Registration <br>
+<b>2.User/Fund Info Registration <br>
 -Path : web_project/src/server/server.js  <br>
--Method  <br>
+-Method</b><br>
  1)Fund Info Registration/Deletion  <br>
   app.post('/fundInsert', function(req, res){  <br>
   app.post('/fundDelete', function(req, res){  <br>
@@ -39,10 +40,10 @@
   app.post('/userInsert', function(req, res){}; <br>
   app.post('/userCheck', function(req, res){}; <br>
 
-<b>[Front-End]</b><br>
-1.User Registartion Page <br>
+<br><b>[Front-End]</b><br>
+<b>1.User Registartion Page <br>
 -Path : web_project/src/pages/SignUp/index.js <br>
--Method <br>
+-Method</b><br>
 1)Get Access Token <br>
   function handleGetToken() <br>
 2)Save Access Token <br>
@@ -50,14 +51,17 @@
 3)Check Valid Account <br>
   function handleSubmitBalance(){ <br>
 4)Component <br>
-  <button className="btn btn-primary btn-block" type="button" style={{backgroundColor: "darkorange", borderColor : "darkorange"}} onClick={handleGetToken}>Token 인증</button> <br>
-  <button className="btn btn-primary btn-block" type="button" style={{backgroundColor: "darkorange", borderColor : "darkorange"}} onClick={handleSaveToken}>Token 저장</button> <br>
-  <button className="btn btn-primary btn-block" type="button" style={{backgroundColor: "green", borderColor : "green"}} onClick={handleSubmitBalance}>계좌 확인</button> <br>
- <br>
-  <div className="form-group"> <br>
-  <label>Account number</label> <br>
-  <input id = "inputAccount" className="form-control" placeholder="Enter account number" onChange={handleSubmitAccountNumber} /> <br>
-  </div> <br>
+<button className="btn btn-primary btn-block" type="button" style={{backgroundColor: "darkorange", borderColor : "darkorange"}} onClick={handleGetToken}>Token 인증</button>
+<br>
+<button className="btn btn-primary btn-block" type="button" style={{backgroundColor: "darkorange", borderColor : "darkorange"}} onClick={handleSaveToken}>Token 저장</button>
+<br>
+<button className="btn btn-primary btn-block" type="button" style={{backgroundColor: "green", borderColor : "green"}} onClick={handleSubmitBalance}>계좌 확인</button>
+<br>
+
+<div className="form-group"> <br>
+<label>Account number</label> <br>
+<input id = "inputAccount" className="form-control" placeholder="Enter account number" onChange={handleSubmitAccountNumber} /> <br>
+</div> <br>
  <br>
   <div className="form-group"> <br>
   <label>Account Status</label> <br>
