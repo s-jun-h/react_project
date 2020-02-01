@@ -11,7 +11,67 @@
 
 
 ### Tech
--Front-End : React, jQuery
--Back-End :Node.js, Express.js
--DataBase : MariaDB
--Server : AWS
+-Front-End : React, jQuery <br>
+-Back-End :Node.js, Express.js <br>
+-DataBase : MariaDB <br>
+-Server : AWS <br>
+
+
+### My Technical Contribution
+[Back-End]<br>
+OAuth 2.0 <br>
+-Path : web_project/src/server/server.js <br>
+-Method <br>
+1) Authorization Code Callback Listener
+  app.get('/AuthCallback', function(req,res){});
+2) Get Access Token
+  app.get('/authResult', function (req, res){});
+3) Get Account Balance (Using KOSCOM API)
+  app.post('/balance', function(req, res){});
+  app.post('/realBalance', function(req, res){});
+
+2. User/Fund Info Registration <br>
+-Path : web_project/src/server/server.js
+-Method
+ 1) Fund Info Registration/Deletion
+  app.post('/fundInsert', function(req, res){
+  app.post('/fundDelete', function(req, res){
+
+ 2) User Info Registration
+  app.post('/userInsert', function(req, res){};
+  app.post('/userCheck', function(req, res){};
+
+[Front-End]
+1. User Registartion Page
+- Path : web_project/src/pages/SignUp/index.js
+- Method
+1) Get Access Token
+  function handleGetToken()
+2) Save Access Token
+  function handleSaveToken()
+3) Check Valid Account
+  function handleSubmitBalance(){
+4) Component
+  <button className="btn btn-primary btn-block" type="button" style={{backgroundColor: "darkorange", borderColor : "darkorange"}} onClick={handleGetToken}>Token 인증</button>
+  <button className="btn btn-primary btn-block" type="button" style={{backgroundColor: "darkorange", borderColor : "darkorange"}} onClick={handleSaveToken}>Token 저장</button>
+  <button className="btn btn-primary btn-block" type="button" style={{backgroundColor: "green", borderColor : "green"}} onClick={handleSubmitBalance}>계좌 확인</button>
+
+  <div className="form-group">
+  <label>Account number</label>
+  <input id = "inputAccount" className="form-control" placeholder="Enter account number" onChange={handleSubmitAccountNumber} />
+  </div>
+
+  <div className="form-group">
+  <label>Account Status</label>
+  <input id = "bankStatus" className="form-control" defaultValue="미확인" readOnly="readOnly" onChange={''} />
+  </div>
+
+  <div className="form-group">
+  <label>CI</label>
+  <input id = "inputCi" className="form-control" placeholder="Enter CI number" onChange={handleSubmitCI} />
+  </div>
+
+<div className="form-group">
+<label>Access Token</label>
+<input id = "inputToken" className="form-control" placeholder="아래 'Token 얻기' 버튼을 눌러 얻으십시오." readOnly="readOnly" onChange={''} />
+                </div>
