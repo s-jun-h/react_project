@@ -1,7 +1,6 @@
 # ‘In-PEF’ 플랫폼 서비스
 
 ### 서비스 개요
-
 1. 크라우드 펀딩 방식을 활용하여, 일반 소액투자자도 사모펀드(PEF)에 가입할 수 있도록 도와주는 플랫폼 서비스
 2. 일반투자자, 자산운용사(펀드매니저), 자산신탁사가 플랫폼 비즈니스의 주체.
 3. 자산신탁사가 사모펀드의 49인이하 구성원 중 1인자격을 갖춘 법인으로서, 사모펀드에 가입
@@ -17,7 +16,7 @@
 -Server : AWS <br>
 
 
-### My Technical Contribution
+### My Technical Contribution (Hong)
 <b>[Back-End]</b><br>
 1.OAuth 2.0 <br>
 -Path : web_project/src/server/server.js <br>
