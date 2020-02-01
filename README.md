@@ -9,14 +9,13 @@
 6. 사업의 지속가능성 측면에서, 플랫폼 비즈니스의 세 주체가 모두 win-win할 수 있는 결과를 도출할 수 있으므로, 안정적인 플랫폼 운영이 기대
 
 
-<br><br>
 ### Tech
 -Front-End : React, jQuery <br>
 -Back-End :Node.js, Express.js <br>
 -DataBase : MariaDB <br>
 -Server : AWS <br>
 
-<br><br>
+
 ### My Technical Contribution (Hong)
 <b>[Back-End]</b><br>
 <b>1.OAuth 2.0 <br>
