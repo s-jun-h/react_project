@@ -18,14 +18,16 @@
 
 
 ### My Technical Contribution
-[Back-End]<br>
+<b>[Back-End]</b><br>
 1.OAuth 2.0 <br>
 -Path : web_project/src/server/server.js <br>
--Method
+-Method <br>
 1)Authorization Code Callback Listener <br>
   app.get('/AuthCallback', function(req,res){});  <br>
+  <br>
 2)Get Access Token  <br>
   app.get('/authResult', function (req, res){}); <br>
+  <br>
 3)Get Account Balance (Using KOSCOM API)  <br>
   app.post('/balance', function(req, res){});  <br>
   app.post('/realBalance', function(req, res){});  <br>
@@ -41,7 +43,7 @@
   app.post('/userInsert', function(req, res){}; <br>
   app.post('/userCheck', function(req, res){}; <br>
  <br>
-[Front-End] <br>
+<b>[Front-End]</b><br>
 1.User Registartion Page <br>
 -Path : web_project/src/pages/SignUp/index.js <br>
 -Method <br>
