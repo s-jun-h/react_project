@@ -12,7 +12,7 @@
 ### Tech
 -Front-End : React, jQuery <br>
 -Back-End :Node.js, Express.js <br>
--DataBase : MariaDB <br>
+-Database : MariaDB <br>
 -Server : AWS <br>
 
 
