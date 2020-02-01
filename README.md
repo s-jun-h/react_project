@@ -49,32 +49,4 @@
 2)Save Access Token <br>
   function handleSaveToken() <br>
 3)Check Valid Account <br>
-  function handleSubmitBalance(){ <br>
-4)Component <br>
-`
-<button className="btn btn-primary btn-block" type="button" style={{backgroundColor: "darkorange", borderColor : "darkorange"}} onClick={handleGetToken}>Token 인증</button>
-<br>
-<button className="btn btn-primary btn-block" type="button" style={{backgroundColor: "darkorange", borderColor : "darkorange"}} onClick={handleSaveToken}>Token 저장</button>
-<br>
-<button className="btn btn-primary btn-block" type="button" style={{backgroundColor: "green", borderColor : "green"}} onClick={handleSubmitBalance}>계좌 확인</button>
-<br>
-
-<div className="form-group"> <br>
-<label>Account number</label> <br>
-<input id = "inputAccount" className="form-control" placeholder="Enter account number" onChange={handleSubmitAccountNumber} /> <br>
-</div> <br>
- <br>
-  <div className="form-group"> <br>
-  <label>Account Status</label> <br>
-  <input id = "bankStatus" className="form-control" defaultValue="미확인" readOnly="readOnly" onChange={''} /> <br>
-  </div> <br>
- <br>
-  <div className="form-group"> <br>
-  <label>CI</label> <br>
-  <input id = "inputCi" className="form-control" placeholder="Enter CI number" onChange={handleSubmitCI} /> <br>
-  </div> <br>
- <br>
-<div className="form-group"> <br>
-<label>Access Token</label> <br>
-<input id = "inputToken" className="form-control" placeholder="아래 'Token 얻기' 버튼을 눌러 얻으십시오." readOnly="readOnly" onChange={''} /> <br>
-</div> <br>`
+  function handleSubmitBalance() <br>
