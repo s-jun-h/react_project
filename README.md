@@ -30,7 +30,7 @@
   app.post('/balance', function(req, res){});  <br>
   app.post('/realBalance', function(req, res){});  <br>
  <br>
-2.User/Fund Info Registration <br>  <br>
+2.User/Fund Info Registration <br>
 -Path : web_project/src/server/server.js  <br>
 -Method  <br>
  1)Fund Info Registration/Deletion  <br>
@@ -43,8 +43,8 @@
  <br>
 [Front-End] <br>
 1.User Registartion Page <br>
-- Path : web_project/src/pages/SignUp/index.js <br>
-- Method <br>
+-Path : web_project/src/pages/SignUp/index.js <br>
+-Method <br>
 1)Get Access Token <br>
   function handleGetToken() <br>
 2)Save Access Token <br>
