@@ -24,10 +24,8 @@
 -Method <br>
 1)Authorization Code Callback Listener <br>
   app.get('/AuthCallback', function(req,res){});  <br>
-  <br>
 2)Get Access Token  <br>
   app.get('/authResult', function (req, res){}); <br>
-  <br>
 3)Get Account Balance (Using KOSCOM API)  <br>
   app.post('/balance', function(req, res){});  <br>
   app.post('/realBalance', function(req, res){});  <br>
@@ -38,11 +36,10 @@
  1)Fund Info Registration/Deletion  <br>
   app.post('/fundInsert', function(req, res){  <br>
   app.post('/fundDelete', function(req, res){  <br>
- <br>
  2)User Info Registration <br>
   app.post('/userInsert', function(req, res){}; <br>
   app.post('/userCheck', function(req, res){}; <br>
- <br>
+
 <b>[Front-End]</b><br>
 1.User Registartion Page <br>
 -Path : web_project/src/pages/SignUp/index.js <br>
