@@ -44,6 +44,7 @@
 
 <br><b>`Front-End`</b><br>
 <b>1.User Registartion Page <br>
+-See the details : [Here!](https://github.com/ElfCony/react_project/wiki/OAuth-2.0-Flow) <br>
 -Path : web_project/src/pages/SignUp/index.js <br>
 -Method</b><br>
 1)Get Access Token <br>
