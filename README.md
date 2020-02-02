@@ -52,3 +52,10 @@
   function handleSaveToken() <br>
 3)Check Valid Account <br>
   function handleSubmitBalance() <br>
+
+<br>
+4. How to run service?
+---
+`
+> node /src/server/server.js
+`
