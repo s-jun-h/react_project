@@ -13,10 +13,10 @@
 2.Tech
 ---
 `
--Front-End : React, jQuery <br>
--Back-End :Node.js, Express.js <br>
--Database : MariaDB <br>
--Server : AWS <br>
+-Front-End : React, jQuery
+-Back-End :Node.js, Express.js
+-Database : MariaDB
+-Server : AWS
 `
 
 3.My Technical Contribution (Hong)
