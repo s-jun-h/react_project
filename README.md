@@ -1,5 +1,8 @@
 ‘In-PEF’ 플랫폼 서비스
 ===
+* See the Service Screen : [Here!](https://github.com/ElfCony/react_project/wiki/Service-Screen) <br>
+* See the OAuth 2.0 details : [Here!](https://github.com/ElfCony/react_project/wiki/OAuth-2.0-Flow) <br>
+
 
 1.서비스 개요
 ---
@@ -22,7 +25,6 @@
 ---
 <b>`Back-End`</b><br>
 <b>1.OAuth 2.0 <br>
--See the details : [Here!](https://github.com/ElfCony/react_project/wiki/OAuth-2.0-Flow) <br>
 -Path : web_project/src/server/server.js <br>
 -Method</b><br>
 1)Authorization Code Callback Listener <br>
