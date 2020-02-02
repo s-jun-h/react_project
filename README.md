@@ -19,7 +19,7 @@
 
 3.My Technical Contribution (Hong)
 ---
-<b>[Back-End]</b><br>
+<b>`Back-End`</b><br>
 <b>1.OAuth 2.0 <br>
 -Path : web_project/src/server/server.js <br>
 -Method</b><br>
@@ -41,7 +41,7 @@
   app.post('/userInsert', function(req, res){}); <br>
   app.post('/userCheck', function(req, res){}); <br>
 
-<br><b>[Front-End]</b><br>
+<br><b>`Front-End`</b><br>
 <b>1.User Registartion Page <br>
 -Path : web_project/src/pages/SignUp/index.js <br>
 -Method</b><br>
