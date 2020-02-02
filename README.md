@@ -33,11 +33,11 @@
 -Path : web_project/src/server/server.js  <br>
 -Method</b><br>
  1)Fund Info Registration/Deletion  <br>
-  app.post('/fundInsert', function(req, res){  <br>
-  app.post('/fundDelete', function(req, res){  <br>
+  app.post('/fundInsert', function(req, res){}); <br>
+  app.post('/fundDelete', function(req, res){});  <br>
  2)User Info Registration <br>
-  app.post('/userInsert', function(req, res){}; <br>
-  app.post('/userCheck', function(req, res){}; <br>
+  app.post('/userInsert', function(req, res){}); <br>
+  app.post('/userCheck', function(req, res){}); <br>
 
 <br><b>[Front-End]</b><br>
 <b>1.User Registartion Page <br>
