@@ -1,0 +1,75 @@
+//1. 테이블 생성
+create table user(
+	email varchar(50) not null primary key,
+	name varchar(30),
+	balance varchar(25),
+	user_type int(11),
+	pwd varchar(100),
+	account varchar(30),
+	ci varchar(100),
+	bank varchar(20),
+	access_token varchar(200)	
+)default character set utf8 collate utf8_general_ci;
+
+create table funds(
+	fund_id varchar(100) primary key,
+	register_email varchar(50),
+	stage varchar(10),
+	total_amount bigint(20),
+	current_amount bigint(20),
+	profit_rate double,
+	company_id varchar(50),
+	start_date varchar(8),
+	end_date varchar(8),
+	fund_style varchar(100),
+	morningstar_type varchar(100),
+	fundmanager_id varchar(50)
+)default character set utf8 collate utf8_general_ci;
+
+create table matched_funds(
+    fund_id varchar(100),
+    invest_email varchar(50),
+    invest_amount long,
+    primary key(fund_id, invest_email),
+    foreign key(fund_id) references funds(fund_id) on delete cascade on update cascade,
+    foreign key(invest_email) references user(email) on delete cascade on update cascade
+)default character set utf8 collate utf8_general_ci;
+
+
+//2. 데이터 추가
+INSERT INTO funds VALUES("삼성아세안자산1","ksh@koscom.co.kr","모집중",130500000000,50500000000,0,"한국자산신탁","20200105","20200805","대형가치펀드","국내 대형주주식형","김수현");
+INSERT INTO funds VALUES("미래에셋아시아","ksh@koscom.co.kr","모집중",130500000000,50500000000,0,"한국자산신탁","20200104","20200805","대형가치펀드","글로벌 주식형","김수현");
+INSERT INTO funds VALUES("신한BNPP봉쥬르","ksh@koscom.co.kr","모집중",250000000000,50500000000,0,"한국자산신탁","20200105","20200805","대형가치펀드","글로벌 주식형","김수현");
+INSERT INTO funds VALUES("신한BNPP동유럽","ksh@koscom.co.kr","운용중",250000000000,50500000000,0,"한국자산신탁","20190105","20190805","대형가치펀드","글로벌 주식형","김수현");
+INSERT INTO funds VALUES("신한BNPP더드림3","ksh@koscom.co.kr","운용중",130500000000,50500000000,0,"우리신탁","20190105","20190805","대형가치펀드","글로벌 주식형","김수현");
+INSERT INTO funds VALUES("미래에셋MSCI이머징","ksh@koscom.co.kr","운용중",130500000000,50500000000,0,"우리신탁","20190105","20190805","대형가치펀드","국내 대형주주식형","김수현");
+INSERT INTO funds VALUES("우리러시아","ksh@koscom.co.kr","운용중",130500000000,50500000000,0,"우리신탁","20190105","20190805","대형가치펀드","국내 대형주주식형","김수현");
+INSERT INTO funds VALUES("미래에셋러시아","ksh@koscom.co.kr","운용중",250000000000,50500000000,0,"우리신탁","20190105","20190805","대형가치펀드","국내 대형주 주식형","김수현");
+INSERT INTO funds VALUES("신한BNPP더드림2","ksh@koscom.co.kr","운용마감",130500000000,50500000000,0,"우리신탁","20190105","20200705","중형혼합펀드","국내 대형주 주식형","김수현");
+INSERT INTO funds VALUES("삼성아세안자산2","ksh@koscom.co.kr","취소",130500000000,50500000000,0,"우리신탁","20200105","20200805","중형혼합펀드","국내 대형주주식형","김수현");
+INSERT INTO funds VALUES("삼성글로벌","ksh@koscom.co.kr","운용마감",250000000000,50500000000,0,"우리신탁","20190105","20201005","중형혼합펀드","국내중소형주 주식형","김수현");
+INSERT INTO funds VALUES("JP모건러시아","kdy@koscom.co.kr","운용마감",250000000000,50500000000,0,"한국자산신탁","20190105","20200705","중형혼합펀드","국내중소형주 주식형","김도연");
+INSERT INTO funds VALUES("미래에셋PanAsia","kdy@koscom.co.kr","운용마감",130500000000,50500000000,0,"한국자산신탁","20190105","20200805","대형가치펀드","국내중소형주 주식형","김도연");
+INSERT INTO funds VALUES("신한BNPP더드림1","kdy@koscom.co.kr","운용마감",130500000000,50500000000,0,"한국자산신탁","20190105","20200605","대형가치펀드","국내중소형주 주식형","김도연");
+INSERT INTO funds VALUES("IBK럭셔리라이프1","kdy@koscom.co.kr","취소",130500000000,50500000000,0,"한국자산신탁","20200105","20200805","대형가치펀드","국내 대형주주식형","김도연");
+INSERT INTO funds VALUES("삼성아세안자산3","kdy@koscom.co.kr","취소",130500000000,50500000000,0,"한국자산신탁","20200105","20200805","소형성장펀드","국내 대형주주식형","김도연");
+INSERT INTO funds VALUES("미래에셋아시아2","kdy@koscom.co.kr","취소",130500000000,50500000000,0,"한국자산신탁","20200105","20200805","소형성장펀드","국내 대형주주식형","김도연");
+INSERT INTO funds VALUES("미래에셋솔로몬아시아","kdy@koscom.co.kr","모집중",130500000000,50500000000,0,"한국자산신탁","20200101","20200805","소형성장펀드","국내 대형주 주식형","김도연");
+INSERT INTO funds VALUES("KB아세안더그레이트","kdy@koscom.co.kr","모집중",250000000000,50500000000,0,"한국자산신탁","20200105","20200805","대형가치펀드","국내 대형주 주식형","김도연");
+INSERT INTO funds VALUES("IBK럭셔리라이프2","kdy@koscom.co.kr","모집중",130500000000,50500000000,0,"한국자산신탁","20200108","20200805","대형가치펀드","국내 대형주 주식형","김도연");
+INSERT INTO funds VALUES("피델리티아세안","kdy@koscom.co.kr","모집중",250000000000,50500000000,0,"한국자산신탁","20200105","20200805","대형가치펀드","국내 대형주 주식형","김도연");
+
+INSERT INTO user VALUES ("hong@gmail.com","홍길동","1000000000",0,"1234","160635473367600099","QciuDFKLcwalCKtWALuNWic9eGm7WNdauW+A+n+mpfhif24c3msHdzVjoZK0ntkXZ1+nA6LX47nyKmIq1JoHhg==" ,"diamond" ,NULL);
+INSERT INTO user VALUES ("ingyu@gmail.com","박인규","23650319627",0,"fintech123@","181292854886800001","KGZDUgKx9ASZuzWb+dA0gFSPfaqASmw4Tc3XyMUJP049hK/HWD5M7joB83GAd/osmPyCyZrQ/36K2awX8lgVjg==" ,"diamond" ,NULL);
+INSERT INTO user VALUES ("jeeae@gmail.com","이지애","43000000000",0,"fintech","01020","30012" ,NULL ,NULL);
+INSERT INTO user VALUES ("koscominvestor@koscom.co.kr","개미대영","32000000",0,"1234","012345678901","-" ,"diamond" ,NULL);
+INSERT INTO user VALUES ("koscommanager@koscom.co.kr","매니저도연","1000000",2,"1234","013345678901","-" ,"diamond" ,NULL);
+
+INSERT INTO matched_funds VALUES("삼성글로벌","ingyu@gmail.com","32000000");
+INSERT INTO matched_funds VALUES("신한BNPP더드림1","ingyu@gmail.com","40000000");
+INSERT INTO matched_funds VALUES("미래에셋솔로몬아시아","ingyu@gmail.com","32000000");
+INSERT INTO matched_funds VALUES("IBK럭셔리라이프2","ingyu@gmail.com","32000000");
+INSERT INTO matched_funds VALUES("미래에셋MSCI이머징","ingyu@gmail.com","32000000");
+INSERT INTO matched_funds VALUES("KB아세안더그레이트","ingyu@gmail.com","32000000");
+INSERT INTO matched_funds VALUES("우리러시아","ingyu@gmail.com","32000000");
+INSERT INTO matched_funds VALUES("미래에셋아시아","ingyu@gmail.com","32000000");
