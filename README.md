@@ -59,3 +59,7 @@
 4.How to run service?
 ---
 `> node /src/server/server.js`
+
+5.SQL for creating tables and datas.
+---
+[Here!](https://github.com/ElfCony/react_project/blob/master/Query.txt)
